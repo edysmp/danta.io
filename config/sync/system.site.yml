@@ -4,7 +4,7 @@ langcode: en
 uuid: 5c3c8a80-145e-4418-8eb6-fc2c63f1d7b1
 name: Danta
 mail: admin@example.com
-slogan: ''
+slogan: 'We are data.io!'
 page:
   403: ''
   404: ''
