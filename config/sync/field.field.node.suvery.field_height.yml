@@ -1,0 +1,23 @@
+uuid: ffd69e42-eb7b-4465-b869-eded775c0c87
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_height
+    - node.type.suvery
+id: node.suvery.field_height
+field_name: field_height
+entity_type: node
+bundle: suvery
+label: Height
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: m
+field_type: decimal

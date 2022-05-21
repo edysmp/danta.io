@@ -1,0 +1,23 @@
+id: survey_csv
+label: Survey CSV
+source:
+  plugin: csv
+  path: /var/www/html/web/modules/custom/survey_migration/data/survey.csv
+  ids: [id]
+process:
+  title:
+    plugin: concat
+    source:
+      - name
+      - instrument
+    delimiter: " - "
+
+  field_name:
+    plugin: get
+    source: name
+  field_age: age
+  field_instrument: instrument
+  field_height: height
+destination:
+  plugin: entity:node
+  default_bundle: suvery

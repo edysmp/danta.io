@@ -21,6 +21,7 @@
         "drupal/core-recommended": "^9.3",
         "drupal/gin": "^3.0@beta",
         "drupal/gin_toolbar": "^1.0@beta",
+        "drupal/migrate_source_csv": "^3.5",
         "drush/drush": "^11.0"
     },
     "conflict": {

@@ -1,0 +1,28 @@
+uuid: 4fdfc2d6-7b65-4ca5-9281-90add7fa36aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.suvery.field_age
+    - field.field.node.suvery.field_height
+    - field.field.node.suvery.field_instrument
+    - field.field.node.suvery.field_name
+    - node.type.suvery
+  module:
+    - user
+id: node.suvery.teaser
+targetEntityType: node
+bundle: suvery
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_age: true
+  field_height: true
+  field_instrument: true
+  field_name: true
