@@ -1,0 +1,9 @@
+name: Survey Migration Example
+description: Example migration
+type: module
+core_version_requirement: ^9
+package: DANTA
+
+dependencies:
+  - drupal:migrate
+  - migrate_source_csv:migrate_source_csv

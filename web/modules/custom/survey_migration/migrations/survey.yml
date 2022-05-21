@@ -1,0 +1,41 @@
+id: survey
+label: Survey
+source:
+  plugin: embedded_data
+  data_rows:
+    - name: Jose
+      age: 20
+      instrument: Drums
+      height: 1.6
+    - name: Darling
+      age: 15
+      instrument: Voice
+      height: 1.2
+    - name: Luis
+      age: 30
+      instrument: Keyboard
+      height: 2
+    - name: Edys
+      age: 20
+      instrument: Electric Guitar
+      height: 1.6
+  ids:
+    name:
+      type: string
+process:
+  title:
+    plugin: concat
+    source:
+      - name
+      - instrument
+    delimiter: " - "
+
+  field_name:
+    plugin: get
+    source: name
+  field_age: age
+  field_instrument: instrument
+  field_height: height
+destination:
+  plugin: entity:node
+  default_bundle: suvery
